@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <title>Event Form</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container">
+            <a href="index.html" class="logo">MZ</a>
+            <div class="search">
+                <input class="search" type="text" placeholder="Search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <div class="profile">
+                <i class="fa-solid fa-bell"></i>
+                <img src="./images/profileImg.jpg" alt="">
+                <button>+Create Event</button>
+            </div>
+            <ul id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menu">
+                    <li>Settings</li>
+                    <li>Change Mode</li>
+                    <li><a href="signup.html">Logout</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="home">
+        <div class="container">
+            <ul class="sections">
+                <li class="active"><a href="#">1. Category Information</a></li>
+                <li><a href="#sec2">2. Timing and Location</a></li>
+                <li><a href="#sec3">3. Event Information</a></li>
+            </ul>
+            <div class="cat">
+                <div class="categories">
+                    <h3><span class="num">1</span> What is the Category of your Event?</h3>
+                    <ul class="eventCat">
+                        <li><i class="fa-solid fa-utensils active"></i><span>Food & Drink</span></li>
+                        <li><i class="fa-solid fa-landmark-dome"></i><span>Arts & Culture</span></li>
+                        <li><i class="fa-solid fa-music"></i><span>Music</span></li>
+                        <li><i class="fa-solid fa-volleyball"></i><span>Sports</span></li>
+                        <li><i class="fa-solid fa-laptop"></i><span>Networking</span></li>
+                    </ul>
+                </div>
+                <div class="categories">
+                    <h3>Select Subcategory</h3>
+                    <ul class="subCat">
+                        <li class="active">Alternative Music</li>
+                        <li>Blues</li>
+                        <li>Classical Music</li>
+                        <li>Country Music</li>
+                        <li>Dance Music</li>
+                        <li>Electronic Music</li>
+                        <li>Hip Hop / RAP</li>
+                        <li>Latin Music</li>
+                        <li>Jazz</li>
+                        <li>Opera</li>
+                        <li>POP</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="sec2" class="categories privacy">
+                <h3><span class="num">2</span> Is this a Private or Public Event?</h3>
+                <div class="options">
+                    <button class="priv active">Private</button>
+                    <button class="pub">Public</button>
+                </div>
+            </div>
+            <div class="categories plans">
+                <h3><span class="num">3</span> When will this Event be?</h3>
+                <select name="" id="" class="select">
+                    <option value="" class="opt">
+                        Monthly
+                    </option>
+                    <option value="" class="opt">
+                        Yearly
+                    </option>
+                </select>
+                <select name="" id="" class="select">
+                    <option value="" class="opt">
+                        Every 1st day of the month
+                    </option>
+                    <option value="" class="opt">
+                        Every last day of the month
+                    </option>
+                </select>
+                <div class="startEnd">
+                    <div class="start">
+                        <label for="start">Starts</label>
+                        <input id="start" type="date">
+                    </div>
+                    <div class="start">
+                        <label for="end">End By</label>
+                        <input id="end" type="date">
+                    </div>
+                </div>
+                <div class="time">
+                    <label for="time">Time</label>
+                    <div class="inputs">
+                        <input id="time" type="time">
+                        <span>-</span>
+                        <input type="time">
+                        <a href="#">Customize</a>
+                    </div>
+                    <span>7 date Mar 22 - Sep 23</span>
+                </div>
+            </div>
+            <div id="sec3" class="categories eventTitle">
+                <h3><span class="num">4</span> Event Title</h3>
+                <input type="text" placeholder="Harmony Unleashed: A Symphony of Ideas">
+            </div>
+            <div class="categories eventTitle">
+                <h3><span class="num">5</span> What is Event About</h3>
+                <textarea name="" id="" rows="7"
+                    placeholder="Celebrating diversity and cultural exchange, showcasing different traditions, arts, and ideas from various communities"></textarea>
+            </div>
+            <div class="categories eventTitle">
+                <h3><span class="num">6</span> Event's Picture</h3>
+                <h3>Upload main Image</h3>
+                <div class="img">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Drag & Drop to upload</span>
+                    <button>Select File</button>
+                    <span>or <a href="#">Use AI</a></span>
+                </div>
+            </div>
+            <div class="footer">
+                <a class="btnNext" href="msg.html">
+                    Submit
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
